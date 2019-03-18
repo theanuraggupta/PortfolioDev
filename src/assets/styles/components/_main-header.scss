@@ -1,0 +1,52 @@
+.navbar-dark {
+    background: $nav-background;
+    a {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    
+
+    .navbar-brand {
+      // @extend .h-100;
+      letter-spacing: 1px;
+      margin: 0;
+      &:hover{
+        transition: all 0.5s linear;
+        @include linear-gradient($navbar-link-hover, $green);
+        // background: 
+        // linear-gradient(
+        //     to right, 
+        //   $navbar-link-hover 1%,
+        //   $base 50%,
+        //   $green 100%
+        // )
+        // left 
+        // bottom
+        // transparent   
+        // no-repeat;
+        // color: $navbar-link-hover !important;
+      }
+    }
+
+    .nav-link {
+      margin: 0 10px;
+      display: inline-block;
+      &:focus,
+      &:hover {
+        color: rgba(255,255,255,.75) !important;
+      }
+    }
+}
+
+.fadeInDown{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both ;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+ul.ml-auto {
+  margin: 8px;
+}
