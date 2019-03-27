@@ -13,14 +13,17 @@ body {
     color: $base !important;
     background: $body-background;//url("/assets/images/background.png");
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
-div:not(:last-child),
 span:not(:last-child),
 label:not(:last-child){
     margin-right: 5px;
+}
+
+.container{
+    margin: 0 auto !important;
+    padding: 20px;
+    min-height: 400px;
 }
 
 // a {
