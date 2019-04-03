@@ -1,52 +1,52 @@
 .navbar-dark {
-    background: $nav-background;
-    a {
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-    }
-    
+  background: transparent;
+  display: flex;
+  z-index: 1;
+  
+  a {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
 
-    .navbar-brand {
-      // @extend .h-100;
-      letter-spacing: 1px;
-      margin: 0;
-      &:hover{
-        transition: all 0.5s linear;
-        @include linear-gradient($navbar-link-hover, $green);
-        // background: 
-        // linear-gradient(
-        //     to right, 
-        //   $navbar-link-hover 1%,
-        //   $base 50%,
-        //   $green 100%
-        // )
-        // left 
-        // bottom
-        // transparent   
-        // no-repeat;
-        // color: $navbar-link-hover !important;
-      }
+  .navbar-brand {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 auto;
+    transition: all 0.5s;
+    &:hover{
+      // color: $navbar-link-hover !important;
+      transition: all 0.5s;
+      @include linear-gradient($navbar-link-hover, $green);
     }
+  }
 
-    .nav-link {
-      margin: 0 10px;
-      display: inline-block;
-      &:focus,
-      &:hover {
-        color: rgba(255,255,255,.75) !important;
-      }
+  .nav-link {
+    margin: 0 10px;
+    display: inline-block;
+    &:focus,
+    &:hover {
+      color: rgba(255,255,255,.75) !important;
     }
+  }
+  
+  .nav-link:hover::after {
+      width: 100%;
+  }
+
+  .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(to right, $navbar-link-hover 1%, $navbar-link-hover 10%, $base 45% , $base 50%, $base 55%, $green 90%, $green 100%);
+      transition: width 0.3s;
+  }
+
 }
 
-.fadeInDown{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-duration: 1s;
-  animation-fill-mode: both ;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
 ul.ml-auto {
   margin: 8px;
 }
