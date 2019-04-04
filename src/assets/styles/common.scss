@@ -6,7 +6,8 @@
     'base/base';
 
 @import
-    'components/main-header';
+    'components/main-header',
+    'components/about';
 
 @media screen and (min-width: 992px) {
     h1{
@@ -15,6 +16,10 @@
     
     #main{
         min-height: 100vh;
+    }
+    
+    .about {
+        margin-bottom: 0;
     }
 }
 
@@ -72,5 +77,8 @@
     }
     .left {
         padding-top: 0;
+    }
+    .top-buffer {
+        padding-top: 120px;
     }
 }

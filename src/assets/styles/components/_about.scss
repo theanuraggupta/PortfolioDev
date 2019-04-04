@@ -1,0 +1,30 @@
+.about {
+    margin-bottom: 60px;
+    letter-spacing: 0.05em;
+    h2 {
+        color: $base;
+        font-size: 44px;
+        font-weight: 660;
+    }
+
+    h4 {
+        color: $base;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    p {
+        font-size: 14px;
+        color: $gray;
+        line-height: 2;
+        margin: 24px 0;
+    }
+    a{
+        color: $navbar-link-hover;
+        text-decoration: none;
+    }
+}
+
+.top-buffer {
+    padding-top: 80px;
+}
