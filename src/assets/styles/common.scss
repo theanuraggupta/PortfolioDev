@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 991px) {
     .navbar{
-        background-color: #232323;
+        background-color: $nav-background;
         padding: 8px 16px;
         z-index: 9;
     }

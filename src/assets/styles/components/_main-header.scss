@@ -1,7 +1,7 @@
 .navbar-dark {
-  background: transparent;
+  background: $nav-background;
   display: flex;
-  z-index: 1001;
+  z-index: 1030;
   max-height: 56px;  
   a {
     font-size: 12px;
@@ -11,7 +11,6 @@
 
   .navbar-brand {
     font-size: 12px;
-    letter-spacing: 2px;
     font-weight: 600;
     color: $base;
     margin: 0 auto;

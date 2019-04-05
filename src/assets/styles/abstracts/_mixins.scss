@@ -6,7 +6,7 @@
 /// @param {Color} $background [mix($primary, white, 75%)] - Scrollbar's color
 /// @example scss - Scrollbar styling
 ///   @include scrollbars(.5em, slategray);
-@mixin scrollbars($size, $foreground-color, $background: mix($foreground-color, $base, 50%)) {
+@mixin scrollbars($size, $foreground-color, $background: mix($foreground-color, $white, 50%)) {
     ::-webkit-scrollbar {
         width:  $size;
         height: $size;
@@ -14,12 +14,12 @@
   
     ::-webkit-scrollbar-thumb {
         background: $foreground-color;
-        border-radius: 30px;
+        // border-radius: 30px;
     }
   
     ::-webkit-scrollbar-track {
         background: $background;
-        border-radius: 30px;
+        // border-radius: 30px;
     }
   
     // For Internet Explorer
@@ -29,8 +29,7 @@
       scrollbar-track-color: $background;
     }
   }
-  
-  @include scrollbars(0.5em, $slate-gray);
+  @include scrollbars(0.2em, $slate-gray);
 
   @mixin linear-gradient($from, $to) {
     background: -webkit-gradient(linear, left top, right top, $from 1%, $from 10%, $white 45% , $white 50%, $white 55%, $to 90%, $to 100%);
