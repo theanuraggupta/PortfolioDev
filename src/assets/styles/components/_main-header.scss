@@ -13,22 +13,23 @@
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 600;
-    color: #fff;
+    color: $base;
     margin: 0 auto;
     transition: all 0.5s;
     &:hover{
-      // color: $navbar-link-hover !important;
+      color: $navbar-link-hover;
       transition: all 0.5s;
-      @include linear-gradient($navbar-link-hover, $green);
+      // @include linear-gradient($navbar-link-hover, $green);
     }
   }
 
   .nav-link {
+    color: $base !important;
     margin: 0 10px;
     display: inline-block;
     &:focus,
     &:hover {
-      color: rgba(255,255,255,.75) !important;
+      color: rgba(255,255,255,.75);
     }
   }
   
@@ -41,7 +42,7 @@
       display: block;
       width: 0;
       height: 2px;
-      background: linear-gradient(to right, $navbar-link-hover 1%, $navbar-link-hover 10%, $base 45% , $base 50%, $base 55%, $green 90%, $green 100%);
+      background: linear-gradient(to right, $navbar-link-hover 1%, $navbar-link-hover 10%, $white 45% , $white 50%, $white 55%, $green 90%, $green 100%);
       transition: width 0.3s;
   }
 
