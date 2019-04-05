@@ -21,6 +21,10 @@
     .about {
         margin-bottom: 0;
     }
+    .hidden-lg{
+        display: none !important;
+        z-index: 0;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -30,6 +34,7 @@
         z-index: 9;
     }
 
+    .hidden-sm,
     .navbar.fixed-top .navbar-collapse {
         display: none !important;
         z-index: 0;
@@ -45,8 +50,13 @@
         display: -webkit-inline-box;
         text-align: center;
         .nav-item{
-            width: 50%;
+            width: 33.33%;
         }
+    }
+    
+    .fixed-top{
+        position: sticky;
+        top: auto;
     }
 }
 
