@@ -1,8 +1,8 @@
 .navbar-dark {
   background: transparent;
   display: flex;
-  z-index: 1;
-  
+  z-index: 1001;
+  max-height: 56px;  
   a {
     font-size: 12px;
     font-weight: 600;
