@@ -6,19 +6,19 @@ $white: #fff;
 $sky-blue: #1bb1e8;
 
 // initial theme colors
-// $base:#fff !default;
-// $body-background: #303030;
-// $nav-background: #232323;
-// $sky-blue: #1bb1e8;
-// $slate-gray: slategray;
-// $gray: #dddddd;
+$base:#fff !default;
+$body-background: #303030;
+$nav-background: #232323;
+$sky-blue: #1bb1e8;
+$slate-gray: slategray;
+$gray: #dddddd;
 
 // second theme colors
-$base:#333 !default;
-$body-background: #ebe5e5;
-$nav-background: #e6dcdc;
-$slate-gray: rgb(26, 27, 27);
-$gray: $base;
+// $base:#333 !default;
+// $body-background: #ebe5e5;
+// $nav-background: #e6dcdc;
+// $slate-gray: rgb(26, 27, 27);
+// $gray: $base;
 
 /// Relative or absolute URL where all assets are served from
 $base-url: '/assets/' !default;
