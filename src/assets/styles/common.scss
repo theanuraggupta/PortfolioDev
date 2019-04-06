@@ -9,56 +9,7 @@
     'components/main-header',
     'components/about';
 
-@media screen and (min-width: 992px) {
-    h1{
-        letter-spacing: 1px;
-    }
-    
-    #main{
-        min-height: 100vh;
-    }
-    
-    .about {
-        margin-bottom: 0;
-    }
-    .hidden-lg{
-        display: none !important;
-        z-index: 0;
-    }
-}
 
-@media screen and (max-width: 991px) {
-    .navbar{
-        background-color: $nav-background;
-        padding: 8px 16px;
-        z-index: 9;
-    }
-
-    .hidden-sm,
-    .navbar.fixed-top .navbar-collapse {
-        display: none !important;
-        z-index: 0;
-    }
-
-    .navbar.fixed-bottom .navbar-collapse{
-        display: inline-block !important;
-        z-index: 1;
-    }
-
-    .navbar-nav{
-        width: 100%;
-        display: -webkit-inline-box;
-        text-align: center;
-        .nav-item{
-            width: 33.33%;
-        }
-    }
-    
-    .fixed-top{
-        position: sticky;
-        top: auto;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .col-md{
@@ -89,5 +40,61 @@
     }
     .top-buffer {
         padding-top: 120px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1{
+        letter-spacing: 1px;
+    }
+    
+    #main{
+        min-height: 100vh;
+    }
+    
+    .about {
+        margin-bottom: 0;
+    }
+    .hidden-lg{
+        display: none !important;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar{
+        background-color: $nav-background;
+        padding: 8px 16px;
+        z-index: 9;
+        min-height: 52px;
+    }
+
+    .hidden-sm,
+    .navbar.fixed-top .navbar-collapse {
+        display: none !important;
+        z-index: 0;
+    }
+
+    .navbar.fixed-bottom .navbar-collapse{
+        display: inline-block !important;
+        z-index: 1;
+    }
+
+    .navbar-nav{
+        width: 100%;
+        display: -webkit-inline-box;
+        text-align: center;
+        .nav-item{
+            width: 33.33%;
+        }
+    }
+    
+    .fixed-top{
+        position: sticky;
+        top: auto;
+    }
+
+    .col-md{
+        padding: 0;
     }
 }
