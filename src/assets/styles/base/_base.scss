@@ -73,6 +73,44 @@ h3 {
     padding-top: 30%;
 }
 
+.homepage {
+    .btn {
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    .btn-primary {
+        background-color: $navbar-link-hover;
+        border-color: $navbar-link-hover !important;
+    }
+
+    .btn-secondary {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: $dark-gray !important;
+        &:hover{
+            background-color: #545b62;
+            border-color: #545b62;
+        }
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        padding: 16px 30px;
+        border-radius: 0;
+        border: 1px;
+        border-style: solid;
+        transition: all 0.5s;
+        font-size: 14px;
+    }
+
+    .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 0.5s;
+        border-color: $navbar-link-hover !important;
+        box-shadow: none;
+    }
+}
+
 // a {
 //     @include linear-gradiant($base, $navbar-link-hover);
 //     &:focus,

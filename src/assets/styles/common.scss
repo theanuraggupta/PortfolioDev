@@ -9,6 +9,50 @@
     'components/main-header',
     'components/about';
 
+
+
+@media screen and (min-width: 768px) {
+    .col-md{
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 46px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 0.5rem 4rem !important;
+    }
+    
+    .vertical-center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+        padding: 20px;
+        align-items: center!important;
+    }
+    
+    .left {
+        padding-top: 0;
+    }
+
+    .top-buffer {
+        padding-top: 120px;
+    }
+
+    .btn-secondary {
+        margin-left: 20px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     h1{
         //letter-spacing: 1px;
@@ -57,37 +101,5 @@
     .fixed-top{
         position: sticky;
         top: auto;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .col-md{
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    h1{
-        font-size: 46px;
-    }
-
-    .navbar {
-        padding: 0.5rem 4rem !important;
-    }
-    
-    .vertical-center{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 10%;
-        padding: 20px;
-        align-items: center!important;
-    }
-    .left {
-        padding-top: 0;
-    }
-    .top-buffer {
-        padding-top: 120px;
     }
 }
