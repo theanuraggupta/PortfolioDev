@@ -49,6 +49,19 @@
     .btn-secondary {
         margin-left: 20px;
     }
+    
+    .homepage {
+        padding: 16px 30px;
+        .btn {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .left{
+        padding-top: 20%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -106,9 +119,5 @@
     .fixed-top{
         position: sticky;
         top: auto;
-    }
-
-    .left{
-        padding-top: 25%;
     }
 }
