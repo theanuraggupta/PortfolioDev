@@ -3,14 +3,14 @@
   display: flex;
   a {
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
   }
 
   .navbar-brand {
     color: $base;
     margin: 0 auto;
     transition: all 0.5s;
+    font-weight: 600;
+    letter-spacing: 2px;
     &:hover{
       color: $navbar-link-hover;
       transition: all 0.5s;
@@ -19,12 +19,18 @@
   }
 
   .nav-link {
+    margin: 0 20px 0 0;
     color: $base !important;
-    margin: 0 10px;
     display: inline-block;
     &:focus,
     &:hover {
       color: rgba(255,255,255,.75);
+    }
+  }
+
+  .nav-item:last-child {
+    .nav-link {
+      margin-right: 10px;
     }
   }
   

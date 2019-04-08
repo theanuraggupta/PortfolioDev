@@ -27,6 +27,12 @@ body {
     // transform: scale(1,1);
 }
 
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: inherit;
+}
+
 #main{
     min-height: 100vh;
     height: 100vh;
@@ -50,6 +56,11 @@ body {
     color: $navbar-link-hover;
 }
 
+.abouthighlight {
+    font-weight: 600;
+    color: $base;
+}
+
 h1{
     line-height: 1.2;
     font-weight: 600;
@@ -70,13 +81,13 @@ h3 {
 
 .left{
     text-align: left;
-    padding-top: 30%;
+    padding-top: 40%;
 }
 
 .homepage {
     .btn {
         margin-top: 30px;
-        color: #fff;
+        color: $white;
     }
 
     .btn-primary {
@@ -85,11 +96,11 @@ h3 {
     }
 
     .btn-secondary {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: transparent;
         border-color: $dark-gray !important;
         &:hover{
-            background-color: #545b62;
-            border-color: #545b62;
+            background-color: $dark-gray;
+            border-color: $dark-gray;
         }
     }
 
@@ -104,7 +115,7 @@ h3 {
     }
 
     .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: $base;
         transition: all 0.5s;
         border-color: $navbar-link-hover !important;
         box-shadow: none;
@@ -209,13 +220,4 @@ h3 {
     animation-fill-mode: both ;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: inherit;
-}
-
-.abouthighlight {
-    font-weight: 600;
-    color: $base;
 }

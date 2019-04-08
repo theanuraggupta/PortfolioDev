@@ -36,8 +36,6 @@
         top: 50%;
         transform: translateY(-50%);
         left: 10%;
-        padding: 20px;
-        align-items: center!important;
     }
     
     .left {
@@ -55,7 +53,7 @@
 
 @media screen and (min-width: 992px) {
     h1{
-        //letter-spacing: 1px;
+        letter-spacing: 1px;
     }
     
     #main{
@@ -65,9 +63,12 @@
     .about {
         margin-bottom: 0;
     }
+
     .hidden-lg{
         display: none !important;
         z-index: 0;
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
@@ -82,11 +83,15 @@
     .navbar.fixed-top .navbar-collapse {
         display: none !important;
         z-index: 0;
+        visibility: hidden;
+        opacity: 0;
     }
 
     .navbar.fixed-bottom .navbar-collapse{
         display: inline-block !important;
         z-index: 1;
+        visibility: visible;
+        opacity: 10;
     }
 
     .navbar-nav{
@@ -101,5 +106,9 @@
     .fixed-top{
         position: sticky;
         top: auto;
+    }
+
+    .left{
+        padding-top: 25%;
     }
 }
