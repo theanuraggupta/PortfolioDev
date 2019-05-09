@@ -115,7 +115,7 @@ h3 {
     }
 
     .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-        background-color: $base;
+        color: $base;
         transition: all 0.5s;
         border-color: $navbar-link-hover !important;
         box-shadow: none;
