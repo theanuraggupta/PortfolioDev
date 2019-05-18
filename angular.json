@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-world": {
+    "my-website": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-world",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-world:build"
+            "browserTarget": "my-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-world:build:production"
+              "browserTarget": "my-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-world:build"
+            "browserTarget": "my-website:build"
           }
         },
         "test": {
@@ -115,7 +115,7 @@
         }
       }
     },
-    "my-world-e2e": {
+    "my-website-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -124,11 +124,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-world:serve"
+            "devServerTarget": "my-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-world:serve:production"
+              "devServerTarget": "my-website:serve:production"
             }
           }
         },
@@ -144,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "my-world"
+  "defaultProject": "my-website"
 }

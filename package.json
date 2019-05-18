@@ -1,6 +1,6 @@
 {
-  "name": "my-world",
-  "version": "0.0.0",
+  "name": "my-website",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
