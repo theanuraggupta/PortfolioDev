@@ -11,6 +11,16 @@
 
 
 
+@media screen and (max-width: 375px){
+    .left{
+        padding-top: 20%;
+    }
+
+    .top-buffer {
+        padding-top: 0px !important;
+    }
+}
+
 @media screen and (min-width: 768px) {
     h1{
         font-size: 46px;
@@ -55,9 +65,9 @@
     .left{
         padding-top: 20%;
     }
-    
-    a + a {
-        margin-left: 10px;
+
+    .top-buffer {
+        padding-top: 60px;
     }
 }
 
@@ -109,7 +119,7 @@
         display: -webkit-inline-box;
         text-align: center;
         .nav-item{
-            width: 33.33%;
+            width: 25%;
         }
     }
     

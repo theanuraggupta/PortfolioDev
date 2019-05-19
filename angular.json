@@ -25,13 +25,14 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/404.html"
+              "src/404.html",
+              "src/manifest.json"
             ],
             "styles": [
               "node_modules/font-awesome/scss/font-awesome.scss",
               "node_modules/bootstrap/scss/bootstrap.scss",
               "src/assets/styles/common.scss",
-              "src/styles.scss" 
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -62,7 +63,9 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json"
             }
           }
         },
@@ -97,7 +100,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/404.html"
+              "src/404.html",
+              "src/manifest.json"
             ]
           }
         },
