@@ -27,8 +27,6 @@ body {
     // transform: scale(1,1);
 }
 
-
-
 h1, h2, h3, h4, h5, h6{
     font-family: inherit;
 }
@@ -53,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .highlight{
-    color: $navbar-link-hover;
+    color: $link;
 }
 
 .abouthighlight {
@@ -91,8 +89,8 @@ h3 {
     }
 
     .btn-primary {
-        background-color: $navbar-link-hover;
-        border-color: $navbar-link-hover !important;
+        background-color: $link;
+        border-color: $link !important;
     }
 
     .btn-secondary {
@@ -116,18 +114,20 @@ h3 {
 
     .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
         color: $base;
+        outline: none !important;
+        background: $link-hover !important;
         transition: all 0.5s;
-        border-color: $navbar-link-hover !important;
+        border-color: $link !important;
         box-shadow: none;
     }
 }
 
 // a {
-//     @include linear-gradiant($base, $navbar-link-hover);
+//     @include linear-gradiant($base, $link);
 //     &:focus,
 //     &:hover{
 //         outline: none;
-//         color: $navbar-link-hover !important;
+//         color: $link !important;
 //         background: none !important;
 //         -webkit-text-fill-color: $base !important;
 //         text-decoration: underline;

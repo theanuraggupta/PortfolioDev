@@ -12,13 +12,6 @@
 
 
 @media screen and (min-width: 768px) {
-    .col-md{
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
     h1{
         font-size: 46px;
     }
@@ -35,7 +28,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 10%;
+        left: 12%;
     }
     
     .left {
@@ -61,6 +54,10 @@
 @media screen and (max-width: 767px){
     .left{
         padding-top: 20%;
+    }
+    
+    a + a {
+        margin-left: 10px;
     }
 }
 

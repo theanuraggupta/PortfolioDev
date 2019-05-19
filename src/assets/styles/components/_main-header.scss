@@ -12,9 +12,9 @@
     font-weight: 600;
     letter-spacing: 2px;
     &:hover{
-      color: $navbar-link-hover;
+      color: $link;
       transition: all 0.5s;
-      // @include linear-gradient($navbar-link-hover, $green);
+      // @include linear-gradient($link, $green);
     }
   }
 
@@ -26,25 +26,22 @@
     &:hover {
       color: rgba(255,255,255,.75);
     }
-  }
 
-  .nav-item:last-child {
-    .nav-link {
-      margin-right: 10px;
+    &::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(to right, $link 1%, $link 10%, $white 45% , $white 50%, $white 55%, $green 90%, $green 100%);
+      transition: width 0.3s;
     }
   }
-  
+
   .nav-link:hover::after {
       width: 100%;
   }
 
   .nav-link::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(to right, $navbar-link-hover 1%, $navbar-link-hover 10%, $white 45% , $white 50%, $white 55%, $green 90%, $green 100%);
-      transition: width 0.3s;
   }
 
 }
