@@ -115,11 +115,15 @@ h3 {
     .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
         color: $base;
         outline: none !important;
-        background: $link-hover !important;
+        background: transparent !important;
         transition: all 0.5s;
         border-color: $link !important;
         box-shadow: none;
     }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 0.2rem $link-hover !important
 }
 
 // a {
@@ -220,4 +224,8 @@ h3 {
     animation-fill-mode: both ;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+}
+
+router-outlet{
+    display: none !important
 }
