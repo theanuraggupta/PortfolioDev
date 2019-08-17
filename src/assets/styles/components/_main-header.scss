@@ -12,7 +12,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     &:hover{
-      color: $link;
+      color: $highlight;
       transition: all 0.5s;
       // @include linear-gradient($link, $green);
     }
@@ -39,9 +39,6 @@
 
   .nav-link:hover::after {
       width: 100%;
-  }
-
-  .nav-link::after {
   }
 
 }

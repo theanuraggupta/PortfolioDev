@@ -40,3 +40,8 @@
     box-decoration-break: clone;
     text-shadow: none;
   }
+
+  @function theme-color($key: 'primary', $variant: 'base') {
+    $map: map-get($theme-colors, $key);
+    @return map-get($map, $variant);
+  }
