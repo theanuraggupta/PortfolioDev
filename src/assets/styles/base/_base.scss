@@ -22,6 +22,14 @@ h1, h2, h3, h4, h5, h6{
     color: $base;
 }
 
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 #main{
     min-height: 100vh;
     height: 100vh;
@@ -30,12 +38,10 @@ h1, h2, h3, h4, h5, h6{
 .justify-content-center{
     justify-content: center!important;
 }
-
 .align-items-center{
     -ms-flex-align: center!important;
     align-items: center!important;
 }
-
 .highlight{
     color: $highlight;
 }
@@ -55,6 +61,7 @@ h1{
 }
 
 h3 {
+    color: $light-gray;
     font-size: 13px;
     padding-top: 20px;
     font-style: italic;
@@ -67,30 +74,37 @@ h3 {
     padding-top: 40%;
 }
 
+::selection {
+    background: $highlight;
+}
+
 .homepage {
     .btn {
-        margin-top: 10px;
+        margin-top: 30px;
         color: $base;
     }
 
     .btn-primary {
         background-color: $highlight;
         border-color: $highlight !important;
+        margin-right: 4px;
     }
 
     .btn-secondary {
         background-color: transparent;
         border-color: $dark-gray !important;
+        &:focus,
         &:active,
+        &:visited,
         &:hover{
-            background-color: $btn-sec-hov;
-            border-color: $btn-sec-hov;
+            background-color: $btn-sec-hov !important;
+            border-color: $btn-sec-hov !important;
         }
     }
 
     .btn-primary,
     .btn-secondary{
-        padding: 16px;
+        padding: 16px 30px;
         border-radius: 0;
         border: 1px;
         border-style: solid;
@@ -108,8 +122,12 @@ h3 {
     }
 }
 
+.btn-secondary:focus, .btn-secondary.focus{
+    box-shadow: 0 0 0 0.1rem $btn-sec-hov !important;
+}
+.btn-primary:focus, .btn-primary.focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus{
-    box-shadow: 0 0 0 0.2rem $link-hover !important
+    box-shadow: 0 0 0 0.1rem $btn-pri-hov !important;
 }
 
 // a {
@@ -212,6 +230,14 @@ h3 {
     animation-name: fadeIn;
 }
 
-router-outlet{
-    display: none !important
+.loader {
+    background-color: #404040;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.animated, .slideOutRight {
+    overflow-x: hidden;
 }

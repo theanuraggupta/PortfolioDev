@@ -7,17 +7,20 @@ $white: #fff;
 $sky-blue: #1bb1e8;
 $black: #000;
 $btn-sec-hov: transparent;
+$light-gray: #c1c1c1;
 
 // initial theme colors
-// $base:#fff !default;
-// $body-background: #252525;
-// $nav-background: #2b2b2b;
-// $sky-blue: #1bb1e8;
-// $slate-gray: slategray;
-// $light-gray: #eae6e6;
-// $dark-gray: #545b62;
-// $btn-sec-hov: $dark-gray;
-// $highlight: $link;
+$base:#fff !default;
+$body-background: #191919;
+$nav-background: #232323;
+$sky-blue: #1bb1e8;
+$slate-gray: slategray;
+$para-color: #eae6e6;
+$dark-gray: #545b62;
+$highlight: $link;
+$btn-pri-hov: $link-hover;
+$btn-sec-hov: $dark-gray;
+$para-color: #eae6e6;
 
 // second theme colors
 // $base:#333 !default;
@@ -25,22 +28,25 @@ $btn-sec-hov: transparent;
 // $nav-background: #e6dcdc;
 // $sky-blue: #1bb1e8;
 // $slate-gray: rgb(26, 27, 27);
-// $light-gray: $base;
+// $para-color: $base;
 // $dark-gray: #545b62;
-// $btn-sec-hov: transparent;
 // $highlight: $link;
+// $btn-pri-hov: $link-hover;
+// $btn-sec-hov: transparent;
+// $para-color: #eae6e6;
 
 
 //third theme colors
-$base:#fff !default;
-$body-background: #066939;
-$nav-background: #2b2b2b;
-$sky-blue: #1bb1e8;
-$slate-gray: slategray;
-$light-gray: #eae6e6;
-$dark-gray: #545b62;
-$btn-sec-hov: $dark-gray;
-$highlight: $link;
+    // $base:#eae6e6 !default;
+    // $body-background: #066939;
+    // $nav-background: #004304;
+    // $sky-blue: #1bb1e8;
+    // $slate-gray: slategray;
+    // $dark-gray: #545b62;
+    // $highlight: $link;
+    // $btn-pri-hov: $link-hover;
+    // $btn-sec-hov: #004304;
+    // $para-color: #eae6e6;
 
 //fourth theme colors
 // $base:#01A355 !default;
@@ -48,10 +54,11 @@ $highlight: $link;
 // $nav-background: #2b2b2b;
 // $sky-blue: #1bb1e8;
 // $slate-gray: slategray;
-// $light-gray: $base;
+// $para-color: $base;
 // $dark-gray: #545b62;
 // $btn-sec-hov: $dark-gray;
 // $highlight: #002B16;
+// $para-color: #eae6e6;
 
 // $theme-colors: (
 //   'primary': (
