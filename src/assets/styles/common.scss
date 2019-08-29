@@ -18,7 +18,7 @@
     }
 
     .top-buffer {
-        padding-top: 0px !important;
+        padding-top: 5px !important;
     }
 }
 
@@ -41,14 +41,6 @@
         transform: translateY(-50%);
         left: 12%;
     }
-    
-    .left {
-        padding-top: 0;
-    }
-
-    .top-buffer {
-        padding-top: 120px;
-    }
 
     .btn-secondary {
         margin-left: 20px;
@@ -63,13 +55,7 @@
 }
 
 @media screen and (max-width: 767px){
-    .left{
-        padding-top: 20%;
-    }
-
-    .top-buffer {
-        padding-top: 60px;
-    }
+    
 }
 
 @media screen and (min-width: 992px) {
