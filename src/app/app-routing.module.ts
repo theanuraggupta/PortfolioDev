@@ -7,10 +7,10 @@ const routes: Routes = [
     path: '', redirectTo: '', component: HomeComponent, pathMatch: 'full'
   },
   {
-    path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+    path: 'about', loadChildren: './about/about.module#AboutModule'
   },
   {
-    path: 'posts', loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)
+    path: 'posts', loadChildren: './posts/posts.module#PostsModule'
   }
 ];
 
