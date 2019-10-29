@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center!important;
 }
 .highlight{
-    color: $highlight;
+    color: $link;
 }
 
 .abouthighlight {
@@ -79,9 +79,8 @@ h3 {
     }
 
     .btn-primary {
-        background-color: $highlight;
-        border-color: $highlight !important;
-        margin-right: 4px;
+        background-color: $link;
+        border-color: $link !important;
     }
 
     .btn-secondary {
@@ -106,13 +105,24 @@ h3 {
         font-size: 14px;
     }
 
-    .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-        color: $base;
-        outline: none !important;
-        background: transparent !important;
-        transition: all 0.5s;
-        border-color: $highlight !important;
-        box-shadow: none;
+    .btn-primary {
+        &:active,
+        &:focus,
+        &:hover{
+            color: $base;
+            transition: all 0.5s;
+            border-color: $link !important;
+            box-shadow: none;
+        }
+        &:hover{
+            background-color: $link-hover !important;
+        }
+
+        &:active,
+        &:focus{
+            background-color: $link !important;
+            box-shadow: 0 0 0 0.2rem $link !important
+        }
     }
 }
 
