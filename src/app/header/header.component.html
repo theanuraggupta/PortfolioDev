@@ -5,8 +5,12 @@
   </button> -->
   <div class="collapse navbar-collapse hidden-sm" id="navbarTogglerDemo01">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" target="_blank" href="https://github.com/theanuraggupta">Projects</a>
+      <li class="nav-item active dropdown-toggle position-relative" data-toggle="dropdown">
+        <a class="nav-link">Projects</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" target="_blank" href="https://github.com/theanuraggupta">Github</a>
+          <a class="dropdown-item" href="#">In Site</a>
+        </div>
       </li>
       <li class="nav-item active">
         <a class="nav-link" routerLink="/posts" routerLinkActive="active">Posts</a>

@@ -22,6 +22,7 @@
     margin: 0 20px 0 0;
     color: $base !important;
     display: inline-block;
+    cursor: pointer;
     &:focus,
     &:hover {
       color: rgba(255,255,255,.75);
@@ -45,4 +46,47 @@
 
 ul.ml-auto {
   margin: 8px;
+}
+
+.dropdown-menu{
+  padding: 0px;
+  left: -50px;
+  background-color: transparent !important;
+  a{
+    color: $white !important;
+    background-color: transparent;
+    &:hover{
+      background-color: $link-hover !important;
+    }
+  }
+  // a:first-child{
+  //   border-right: 1px solid $white;
+  // }
+}
+
+.dropdown-menu::before{
+  display: inline-block;
+  position: absolute;
+  margin-left: 0.255em;    
+  top: -6px;
+  left: 46%;
+  vertical-align: 0.255em;
+  content: "";
+  color: $white;
+  border-top: 0;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.3em solid;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-toggle::after{
+  color: $white;
+  margin-right: 14px;
+  margin-left: -22px;
+  vertical-align: 0.1em;
+}
+
+.dropdown-menu.show{
+  top: 2.3em;
+  display: inline-flex;
 }
