@@ -7,7 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ProjectsModule } from './projects/projects.module';
+import { PostsModule } from './posts/posts.module';
+import { ConstructionComponent } from './util/construction/construction.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
