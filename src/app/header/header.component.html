@@ -8,8 +8,8 @@
       <li class="nav-item active dropdown-toggle position-relative" data-toggle="dropdown">
         <a class="nav-link">Projects</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" target="_blank" href="https://github.com/theanuraggupta">Github</a>
-          <a class="dropdown-item" href="#">In Site</a>
+          <a class="dropdown-item" target="_blank" style="margin-right: 4px;" (click)="$event.stopPropagation()" href="https://github.com/theanuraggupta">Github</a>
+          <a class="dropdown-item" style="margin-left: 4px;" routerLink="/projects" (click)="$event.stopPropagation()">In Site</a>
         </div>
       </li>
       <li class="nav-item active">

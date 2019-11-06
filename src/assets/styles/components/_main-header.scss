@@ -51,11 +51,21 @@ ul.ml-auto {
 .dropdown-menu{
   padding: 0px;
   left: -50px;
-  background-color: transparent !important;
+  background-color: $white;
+  background-clip: unset;
   a{
-    color: $white !important;
-    background-color: transparent;
+    color: $black;
+    background-color: $white;
+    &:first-child{  
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+    &:last-child{  
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
     &:hover{
+      color: $white !important;
       background-color: $link-hover !important;
     }
   }
@@ -67,16 +77,16 @@ ul.ml-auto {
 .dropdown-menu::before{
   display: inline-block;
   position: absolute;
-  margin-left: 0.255em;    
+  margin-left: 0.255em;
   top: -6px;
-  left: 46%;
+  left: 45%;
   vertical-align: 0.255em;
   content: "";
-  color: $white;
+  color: #fff;
   border-top: 0;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.3em solid;
-  border-left: 0.3em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0.4em solid;
+  border-left: 0.4em solid transparent;
 }
 
 .dropdown-toggle::after{
