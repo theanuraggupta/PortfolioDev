@@ -2,7 +2,7 @@
   background: transparent;
   display: flex;
   a {
-    font-size: 12px;
+    font-size: 14px !important;
   }
 
   .navbar-brand {
@@ -66,7 +66,7 @@ ul.ml-auto {
     }
     &:hover{
       color: $white !important;
-      background-color: $link-hover !important;
+      background-color: $link !important;
     }
   }
   // a:first-child{

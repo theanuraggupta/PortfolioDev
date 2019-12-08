@@ -29,9 +29,10 @@
               "src/manifest.json"
             ],
             "styles": [
-              "node_modules/bootstrap/scss/bootstrap.scss",
+              "./node_modules/bootstrap/scss/bootstrap.scss",
               "src/assets/styles/common.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
