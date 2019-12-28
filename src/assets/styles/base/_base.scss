@@ -130,14 +130,6 @@ i{
     }
 }
 
-.btn-secondary:focus, .btn-secondary.focus{
-    box-shadow: 0 0 0 0.1rem $btn-sec-hov !important;
-}
-.btn-primary:focus, .btn-primary.focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus{
-    box-shadow: 0 0 0 0.1rem $btn-pri-hov !important;
-}
-
 // a {
 //     @include linear-gradiant($base, $link);
 //     &:focus,
@@ -210,6 +202,7 @@ i{
  
 
 .fadeInDown{
+    transition: 1s;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-duration: 1s;
@@ -219,6 +212,7 @@ i{
 }
 
 .fadeInUp{
+    transition: 1s;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-duration: 1s;

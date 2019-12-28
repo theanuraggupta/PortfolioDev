@@ -24,10 +24,6 @@
     h3 {
         font-size: 16px;
     }
-
-    .navbar {
-        padding: 0.5rem 4rem !important;
-    }
     
     .vertical-center{
         position: absolute;
@@ -46,11 +42,27 @@
             margin-top: 30px;
         }
     }
+
+    .btn-secondary:focus, .btn-secondary.focus{
+        box-shadow: 0 0 0 0.1rem $btn-sec-hov;
+    }
+    .btn-primary:focus, .btn-primary.focus,
+    .btn-primary:not(:disabled):not(.disabled):active:focus{
+        box-shadow: 0 0 0 0.1rem $btn-pri-hov;
+    }
 }
 
 @media screen and (max-width: 767px){
     .left{
         padding-top: 22%;
+    }
+    .homepage .btn-primary:active,
+    .homepage .btn-primary:focus,
+    .btn-primary:focus, .btn-primary.focus,
+    .btn-primary:not(:disabled):not(.disabled):active:focus
+    .btn-secondary:not(:disabled):not(.disabled):active:focus,
+    .btn-secondary:focus, .btn-secondary.focus{
+        box-shadow: none !important;
     }
 }
 
@@ -73,6 +85,10 @@
         visibility: hidden;
         opacity: 0;
     }
+
+    .navbar {
+        padding: 0.5rem 4rem;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -80,6 +96,9 @@
         background-color: $nav-background;
         padding: 8px 16px;
         z-index: 9;
+        .navbar-brand {
+          letter-spacing: 5px;
+        }
     }
 
     .hidden-sm,
