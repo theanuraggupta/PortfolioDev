@@ -1,33 +1,41 @@
 
-<header></header>
-<div id="main" class="container top-buffer">
-    <router-outlet></router-outlet>
-</div>
-<nav class="navbar fixed-bottom navbar-expand-lg fadeInUp navbar-dark">
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav">
-            <!-- <li class="nav-item hidden-sm">
-                <a class="nav-link" href="mailto:email@anuraggupta.in?Subject=Hello%20Anurag">Contact</a>
-            </li> -->
-            <li class="nav-item hidden-sm">
-                <a class="nav-link" target="_blank" href="https://www.instagram.com/anurag_______gupta/"><i class="fa fa-instagram"></i>Instagram</a>
-            </li>
-            <li class="nav-item hidden-sm">
-                <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/anurag-in-india/"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
-            </li>
-            <li class="nav-item active hidden-lg">
-                <a class="nav-link" target="_blank" href="https://github.com/theanuraggupta"><i class="fa fa-github" aria-hidden="true"></i>Projects</a>
-            </li>
-            <!-- <li class="nav-item active hidden-lg">
-                <a class="nav-link" routerLink="/posts" routerLinkActive="active"><i class="fa fa-blogger"></i>Posts</a>
-            </li> -->
-            <li class="nav-item active hidden-lg">
-                <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa fa-info-circle"></i>About</a>
-            </li>
-            <li class="nav-item active hidden-lg">
-                <a class="nav-link" href="mailto:email@anuraggupta.in?Subject=Hello%20Anurag"><i class="fa fa-envelope-open"></i>Contact</a>
-            </li>
-        </ul>
+<div class="wrapper">
+    <div class="animated slideOutRight loader d-none d-sm-none d-md-block"></div>
+    <header></header>
+    <!-- CONTENT -->
+    <div class="container">
+        <router-outlet>
+        </router-outlet>
     </div>
-</nav>
+    <!-- CONTENT -->
+    <!-- FOOTER -->
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark animated fadeInUp">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item hidden-sm">
+                    <a class="nav-link" href="mailto:email@anuraggupta.in?Subject=Hello%20Anurag">Contact</a>
+                </li> -->
+                <li class="nav-item hidden-sm">
+                    <a class="nav-link" target="_blank" href="https://www.instagram.com/anurag_______gupta/"><i class="fa fa-instagram"></i>Instagram</a>
+                </li>
+                <li class="nav-item hidden-sm">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/anurag-in-india/"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+                </li>
+                <li class="nav-item active hidden-lg">
+                    <a class="nav-link" target="_blank" href="https://github.com/theanuraggupta"><i class="fa fa-github" aria-hidden="true"></i>Projects</a>
+                </li>
+                <!-- <li class="nav-item active hidden-lg">
+                    <a class="nav-link" routerLink="/posts" routerLinkActive="active"><i class="fa fa-blogger"></i>Posts</a>
+                </li> -->
+                <li class="nav-item active hidden-lg">
+                    <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa fa-info-circle"></i>About</a>
+                </li>
+                <li class="nav-item active hidden-lg">
+                    <a class="nav-link" href="mailto:email@anuraggupta.in?Subject=Hello%20Anurag"><i class="fa fa-envelope-open"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--FOOTER  -->
+</div>
   
