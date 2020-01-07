@@ -1,5 +1,6 @@
 body {
     background-color: $body-background;
+    color: $base;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -213,11 +214,35 @@ i{
     overflow-x: hidden;
 }
 
-.top-buffer {
-    padding-top: 80px;
+.top-buffer-120 {
+    padding-top: 120px;
+}
+
+.top-buffer-60 {
+    padding-top: 60px;
 }
 
 .fa:before{
     width: 14px;
     height: 14px;
+}
+
+.accordion{
+    width: 100%;
+    .card{
+        padding: 10px;
+        background-color: #3c3c3c;
+        .card-header{
+            padding: 0;
+            background: transparent;
+            border: none;
+            button{
+                color: $base;
+                background: transparent;
+            }
+        }
+        .card-body{
+            padding: 0;
+        }
+    }
 }

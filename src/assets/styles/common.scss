@@ -25,10 +25,6 @@
         font-size: 16px;
     }
     
-    .top-buffer {
-        padding-top: 120px;
-    }
-    
     .vertical-center{
         position: absolute;
         top: 50%;
@@ -72,7 +68,7 @@
 @media screen and (max-width: 767px){
     .left{
         text-align: left;
-        padding-top: 40%;
+        padding-top: 50%;
     }
     .homepage .btn-primary:active,
     .homepage .btn-primary:focus,
@@ -81,6 +77,19 @@
     .btn-secondary:not(:disabled):not(.disabled):active:focus,
     .btn-secondary:focus, .btn-secondary.focus{
         box-shadow: none !important;
+    }
+    .accordion {
+        .card{
+            .card-header{
+                button{
+                    padding-left: 5px;
+                }
+            }
+            .card-body{
+                border-top: 1px solid $base;
+                padding: 10px;
+            }
+        }
     }
 }
 
@@ -102,6 +111,28 @@
 
     .navbar {
         padding: 0.5rem 4rem;
+    }
+
+    .accordion{
+        .card{
+            display: inline-block;
+            width: 100%;
+            .collapse.show,
+            .card-header{
+                display: -webkit-inline-flex;
+                display: inline-flex;
+            }
+            .card-header{
+                width: 20%;
+            }
+            .collapse.show{
+                width: 80%;
+                padding: 0 20px;
+            }
+            .collapsing{
+                display: none;
+            }
+        }
     }
 }
 

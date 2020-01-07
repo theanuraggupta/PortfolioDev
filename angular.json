@@ -29,12 +29,14 @@
               "src/manifest.json"
             ],
             "styles": [
+              "./node_modules/bootstrap/scss/bootstrap.scss",
               "src/assets/styles/common.scss",
               "src/styles.scss",
               "./node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js"
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "es5BrowserSupport": true
           },
