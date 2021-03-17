@@ -33,7 +33,7 @@
     }
 
     .btn-secondary {
-        margin-left: 20px;
+        margin-left: 24px;
     }
     
     .homepage {
@@ -46,10 +46,12 @@
     .btn-secondary:focus, .btn-secondary.focus{
         box-shadow: 0 0 0 0.1rem $btn-sec-hov;
     }
+
     .btn-primary:focus, .btn-primary.focus,
     .btn-primary:not(:disabled):not(.disabled):active:focus{
         box-shadow: 0 0 0 0.1rem $btn-pri-hov;
     }
+
     .wrapper {
         width: 100%;
         margin: 0 auto;
@@ -57,11 +59,16 @@
         min-height: 100vh;
         overflow: hidden;
     }
+
     .vertical-center {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 10%;
+    }
+    
+    .col-md {
+        padding: 0px !important;
     }
 }
 
@@ -133,6 +140,10 @@
                 display: none;
             }
         }
+    }
+
+    .top-buffer-120 {
+        padding-top: 50px !important;
     }
 }
 

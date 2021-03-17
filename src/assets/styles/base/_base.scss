@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center!important;
 }
 .highlight{
-    color: $link;
+    color: $link !important;
 }
 
 .abouthighlight {
@@ -88,7 +88,7 @@ i{
 
     .btn-primary,
     .btn-secondary{
-        padding: 16px 30px;
+        padding: 16px 34px;
         border-radius: 0;
         border: 1px;
         border-style: solid;
