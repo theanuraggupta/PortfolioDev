@@ -30,19 +30,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T93GLZH"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <script>
-    (function () {
-      // Retrieve the URL the user was trying to access when receiving the 404.
-      var redirect = sessionStorage.redirect;
-      // Remove the URL from sessionStorage.
-      delete sessionStorage.redirect;
-      // Check if we actually need to redirect.
-      if (redirect && redirect != location.href) {
-        // We need to redirect to the URL the user was trying to access.
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
+  
   <app-root></app-root>
   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
