@@ -4,19 +4,22 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '', component: HomeComponent, pathMatch: 'full'
+    path: '', component: HomeComponent
   },
   {
-    path: 'about', loadChildren: './modules/about/about.module#AboutModule'
+    path: '', redirectTo: '', pathMatch: 'full'
   },
   {
-    path: 'posts', loadChildren: './modules/posts/posts.module#PostsModule'
+    path: 'about', loadChildren: () => import('./modules/about/about.module').then(x => x.AboutModule)
   },
   {
-    path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule'
+    path: 'posts', loadChildren: () => import('./modules/posts/posts.module').then(x => x.PostsModule)
   },
   {
-    path: 'construction', loadChildren: './util/util.module#UtilModule'
+    path: 'projects', loadChildren: () => import('./modules/projects/projects.module').then(x => x.ProjectsModule)
+  },
+  {
+    path: 'construction', loadChildren: () => import('./util/util.module').then(x => x.UtilModule)
   }
 ];
 
