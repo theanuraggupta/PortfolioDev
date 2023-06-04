@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PortfolioApp';
+  isResumeViewer = window.location.href.indexOf('resume') > -1
 }

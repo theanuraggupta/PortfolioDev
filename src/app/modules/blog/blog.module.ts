@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 
-import { PostsRoutingModule } from './posts-routing.module';
-import { PostsComponent } from './posts.component';
+import { BlogRoutingModule } from './blog-routing.module';
+import { BlogComponent } from './blog.component';
 import { ConstructionComponent } from '../../util/construction/construction.component';
 import { UtilModule } from '../../util/util.module';
 
 @NgModule({
   declarations: [
-    PostsComponent
+    BlogComponent
   ],
   imports: [
-    PostsRoutingModule,
+    BlogRoutingModule,
     UtilModule
   ]
 })
-export class PostsModule { }
+export class BlogModule { }

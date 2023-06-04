@@ -1,14 +1,17 @@
 
 <div class="wrapper">
     <div class="animated slideOutRight loader d-none d-sm-none d-md-block"></div>
-    <header></header>
+    <header [ngClass]="{'display-none': isResumeViewer}"></header>
     <!-- CONTENT -->
     <div class="container">
         <router-outlet></router-outlet>
     </div>
     <!-- CONTENT -->
     <!-- FOOTER -->
-    <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark animated fadeInUp">
+    <nav 
+        class="navbar fixed-bottom navbar-expand-lg navbar-dark animated fadeInUp"
+        [ngClass]="{'display-none': isResumeViewer}"
+    >
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav">
                 <!-- <li class="nav-item hidden-sm">
@@ -24,7 +27,7 @@
                     <a class="nav-link" target="_blank" href="https://github.com/theanuraggupta"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
                 </li>
                 <!-- <li class="nav-item active hidden-lg">
-                    <a class="nav-link" routerLink="/posts" routerLinkActive="active"><i class="fa fa-blogger"></i>Posts</a>
+                    <a class="nav-link" routerLink="/blog" routerLinkActive="active"><i class="fa fa-blogger"></i>Blog</a>
                 </li> -->
                 <li class="nav-item active hidden-lg">
                     <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa fa-info-circle"></i>About</a>
